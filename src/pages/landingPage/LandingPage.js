@@ -30,7 +30,7 @@ const LandingPage = () => {
     const res = await fetch(allCountriesUrl, {
       method: 'GET'
     })
-    console.log(res)
+    // console.log(res)
     if (res.ok){
       const data = await res.json();
       setLoading(false);
@@ -61,18 +61,25 @@ const LandingPage = () => {
 
 
   const search = async()=>{
-      setLoading(true)
-      const res = await fetch(api.searchByCountryNameUrl, {
+      // setLoading(true)
+      const value =searchPhrase
+      const res = await fetch(`https://restcountries.com/v3.1/name/${value}`, {
           margin: 'GET'
-      })
+      }) 
 
-      console.log(res)
+      if(res.ok){
+        const data = await res.json();
+        // setCountries(data)
+        console.log(data)
+      }
+
+      // console.log(res)
   }
 
 
   useEffect(()=>{
     getAllCountries();
-  },[getAllCountries])
+  },[])
 
   if(loading){
     return (
@@ -88,9 +95,10 @@ const LandingPage = () => {
     )
   }
   const handleEvent = (event) => {
-    if (event.key === 'Enter') {
-      search()
-    }
+    console.log(searchPhrase)
+    // if (event.key === 'Enter') {
+    //   search()
+    // }
   }
 
   return (
@@ -106,13 +114,14 @@ const LandingPage = () => {
           name="search" 
           value={searchPhrase}
           placeholder="search for a countiry...."
-          onKeyDown={handleEvent }
+          onKeyDown={e => e.key === 'Enter' && search() }
           onChange={e=>updateSearchPhrase(e)}
+          
           >
 
           </input>
 
-          <select> </select>
+       
 
 
         </div>
