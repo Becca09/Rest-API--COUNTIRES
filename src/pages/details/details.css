@@ -1,0 +1,43 @@
+.details-body{
+    background-color: #262e39;
+    min-height: 100vh;
+}
+
+.back-button{
+    margin: 0 5.5rem;
+    padding: 2rem 0;
+}
+
+.detials_{
+    display: flex;
+     color: rgba(255, 255, 255, 0.925);
+     margin: 1rem 5.5rem;
+    }
+
+    .country-details{
+        margin-left: 3rem;
+    }
+
+.infos{
+    display: flex;
+}
+
+.infos p{
+    font-weight: lighter;
+}
+
+.infos span{
+    font-weight: bold;
+    margin-right: 1rem;
+    /* margin-left: 1rem; */
+    
+}
+
+.country-info2{
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+}
+
+.border-countries{
+    display: flex;
+}

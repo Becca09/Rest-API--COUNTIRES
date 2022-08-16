@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 7%;
+    background-color: #38445b;
+    color: white;
+
+}
+
+
+.mode{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    
+}
+
+
+.darkimg{
+     margin-left: 40%;
+    margin-top: -1%; 
+}

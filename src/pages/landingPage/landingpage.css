@@ -1,0 +1,65 @@
+.body{
+    background-color: #262e39;
+    width: 100vw;
+    min-height: 100vh;
+}
+.search-filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 7%;
+}
+
+.search{
+    background-color: #38445b;
+    width: 30%;
+    padding: 1% 2%;
+}
+
+input{
+    color: rgba(255, 255, 255, 0.925);
+    border: none;
+    background-color: #38445b;
+    width: 80%;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.search input:focus-visible{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+#country{
+    background-color: #38445b;
+    color: white;
+    border: none;
+}
+
+ .list-of-countires{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 7%;
+  
+}
+
+.card{
+    margin-right: 3rem;
+    background-color: #38445b;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    color: white;
+    box-shadow: rgba(27, 19, 20, 0.66) 0 5px 15px;
+}
+
+/* .card-img{
+    height: 10rem;
+} */
+
+.info{
+    padding: 1rem 2rem;
+}
+
